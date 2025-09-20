@@ -1,8 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Sourabh Bajaj
-% Website: https://github.com/sb2nov/resume
-% License : MIT
+% Author :  Aditya Dubey
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -16,7 +14,6 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -70,97 +67,91 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://sourabhbajaj.com/}{\Large Aditya Dubey}} & Email : \href{mailto:adityadubeyworkk@gmail.com}{adityadubeyworkk@gmail.com}\\
-  \href{http://adityadubey.in/}{http://www.adityadubey.in} & Mobile : +91-9038812811 \\
+  \textbf{\href{https://www.adityadubey.in}{\Large Aditya Dubey}} & Email : \href{mailto:adityadubeyworkk@gmail.com}{adityadubeyworkk@gmail.com}\\
+  \href{https://www.adityadubey.in}{www.adityadubey.in} & Mobile : +91-9038812811 \\
 \end{tabular*}
 
+%-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-  {IBM}{Bangalore, India}
-  {Software Engineer}{Sept 2024 -- Present}
-  \resumeItemListStart
-    \resumeItem{Marketing Adapter}
-      {Developed a Spring Boot 3.x (Kotlin) microservice to expose martech destination metadata, enabling business teams to forecast campaign performance and optimize marketing spend decisions.}
-    \resumeItem{Marketing Dashboard}
-      {Built and maintained Kafka-based microservices to process and route large-scale user event data to ad platforms such as Google, Meta, and Yahoo, ensuring high throughput and reliability.}
-    \resumeItem{Tag Managers}
-      {Designed and optimized JavaScript rules in Adobe Launch to capture real-time data layer events and publish them to destinations (Pinterest, Yahoo, Google), improving script accuracy and performance by \textbf{30\%}.}
-    \resumeItem{Gauge}
-      {Implemented an internal CAPI tool to capture and transmit user events to DACI (analytics platform), enhancing data quality and availability for downstream analytics.}
-  \resumeItemListEnd
+      {IBM}{Bangalore, India}
+      {Software Engineer}{Sept 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Marketing Adapter}
+          {Developed a Spring Boot (3.x, Kotlin) microservice to expose martech destination metadata, enabling business teams to forecast campaign performance and optimize marketing spend decisions.}
+        \resumeItem{Marketing Dashboard}
+          {Built and maintained Kafka-based microservices to process and route large-scale user event data to ad platforms such as Google, Meta, and Yahoo, ensuring high throughput and reliability.}
+        \resumeItem{Tag Managers}
+          {Designed and optimized JavaScript rules in Adobe Launch to capture real-time data layer events and publish them to destinations (Pinterest, Yahoo, Google), improving script accuracy and performance by \textbf{30\%}.}
+        \resumeItem{Gauge}
+          {Implemented an internal CAPI tool to capture and transmit user events to DACI (analytics platform), enhancing data quality and availability for downstream analytics.}
+      \resumeItemListEnd
 
     \resumeSubheading
-      {TCS}{Kolkata}
-      {IT-Analyst}{AUG'20 - SEPT'-24}
+      {TCS}{Kolkata, India}
+      {IT Analyst}{Aug 2020 -- Sept 2024}
       \resumeItemListStart
-        \resumeItem{SAP-Hybris E-commerce Platform}
-          {Engineered robust, client-facing APIs for a dynamic rule engine within the SAP Hybris framework, leveraging MVEL to enable flexible, user-driven business logic configuration.}
-\newline
-          {Resolved critical production incidents and application bugs under strict Service Level Agreements (SLAs), ensuring high system availability and business continuity.}
+        \resumeItem{SAP Hybris E-commerce Platform}
+          {Engineered client-facing APIs for a dynamic rule engine within the SAP Hybris framework, leveraging MVEL for flexible business logic configuration. Resolved critical production incidents and application bugs under strict SLAs, ensuring high system availability and business continuity.}
         \resumeItem{ASN Tracking Tool}
-        {Developed the core backend service for a B2B logistics application, architecting key functionalities for real-time shipment tracking and Advance Shipping Notice (ASN) management.}
-        \newline
-        {Collaborated with cross-functional teams to define API specifications and data models, ensuring seamless data interchange between carriers, suppliers, and the central platform.}
-        \newline
-      {Optimized SQL queries and caching strategies in PostgreSQL and MySQL, reducing API response times by up to \textbf{25\%}.}
-      \newline
-      {Implemented automated unit and integration tests using JUnit5 and SonarQube, improving code coverage and reducing post-release defects.}
+          {Developed the backend service for a B2B logistics application to enable real-time shipment tracking and Advance Shipping Notice (ASN) management. Collaborated with cross-functional teams to define API specifications and data models, ensuring seamless data interchange between carriers, suppliers, and the central platform.}
+        \resumeItem{System Performance Optimization}
+          {Optimized SQL queries and caching strategies in PostgreSQL and MySQL, reducing API response times by up to \textbf{25\%}.}
+        \resumeItem{Testing and Code Quality}
+          {Implemented automated unit and integration tests using JUnit5 and SonarQube, improving code coverage and reducing post-release defects.}
+        \resumeItem{Collaboration and Agile Practices}
+          {Worked in Agile Scrum teams, participated in sprint planning, story grooming, and retrospectives, ensuring timely delivery of features and bug fixes.}
+        \resumeItem{Deployment}
+          {Supported build and deployment pipelines using Maven and Gradle; contributed to continuous integration practices, ensuring smooth production rollouts.}
+        \resumeItem{Production Support}
+          {Handled critical incident management and root cause analysis for high-priority production issues, minimizing downtime and improving SLA compliance.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-  \resumeSubItem{Daily Scriptures quotes}
-      {A subscription-based N8N-backed project which used the Claude AI model to generate quotes and send the same to subscribers. }
+    \resumeSubItem{Daily Scriptures Quotes}
+      {Built a subscription-based project using N8N and Claude AI to generate and deliver scripture quotes to subscribers via automated workflows. \textbf{Tech:} N8N, Claude API, Automation.}
     \resumeSubItem{dwiveditea.com}
-      {A freelance project for a small-scale Tea business, where consumers can order from the website.}
+      {Developed a freelance e-commerce website for a tea business, enabling online ordering and customer management. \textbf{Tech:} Spring Boot, HTML/CSS, JavaScript.}
   \resumeSubHeadingListEnd
 
-%
-
-
-%-----------Certification-----------------
-
-\section{Certification}
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
   \resumeSubHeadingListStart
-    \resumeSubItem{Udemy certified}
-    {Microservices professional using Spring Boot}
-      \resumeSubItem{NPTEL Learning}
-    {Data Strcutures \textbf{\&} Algorithms}
+    \resumeSubItem{Udemy Certification}
+      {Microservices Professional using Spring Boot}
+    \resumeSubItem{NPTEL Certification}
+      {Data Structures \& Algorithms}
   \resumeSubHeadingListEnd
 
-
-%--------PROGRAMMING SKILLS------------
+%-----------PROGRAMMING SKILLS------------
 \section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages:} Java, Kotlin, JavaScript, Python, SQL \\
-     \textbf{Frameworks:} Spring Boot 3.x \\
-     \textbf{Databases:} PostgreSQL, MongoDB, MySQL \\
-     \textbf{Message Brokers:} Apache Kafka \\
-     \textbf{Developer Tools:} Bitbucket, Maven, Gradle, SonarQube, JUnit5, LEC (internal deployment and secrets management tool)
-   }
- \resumeSubHeadingListEnd
+ \begin{itemize}[leftmargin=*,nosep]
+   \item \textbf{Languages:} Java, Kotlin, JavaScript, Python, SQL
+   \item \textbf{Frameworks:} Spring Boot (3.x), SAP Hybris
+   \item \textbf{Databases:} PostgreSQL, MongoDB, MySQL
+   \item \textbf{Message Brokers:} Apache Kafka
+   \item \textbf{Developer Tools:} Git, Bitbucket, Maven, Gradle, SonarQube, JUnit5, 
+         LEC (internal deployment and secrets management tool)
+ \end{itemize}
+
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {MCKVIE - (MAKAUT Affiliated)}{Kolkata}
-      {B-Tech;  DGPA 8.00}{2016 -- 2020}
+      {MCKVIE - (MAKAUT Affiliated)}{Kolkata, India}
+      {B.Tech in Computer Science; DGPA: 8.00}{2016 -- 2020}
   \resumeSubHeadingListEnd
-
-
 
 %-------------------------------------------
 \end{document}
