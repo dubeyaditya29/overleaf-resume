@@ -1,0 +1,166 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Aditya Dubey}} & Email : \href{mailto:adityadubeyworkk@gmail.com}{adityadubeyworkk@gmail.com}\\
+  \href{http://adityadubey.in/}{http://www.adityadubey.in} & Mobile : +91-9038812811 \\
+\end{tabular*}
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+  {IBM}{Bangalore, India}
+  {Software Engineer}{Sept 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Marketing Adapter}
+      {Developed a Spring Boot 3.x (Kotlin) microservice to expose martech destination metadata, enabling business teams to forecast campaign performance and optimize marketing spend decisions.}
+    \resumeItem{Marketing Dashboard}
+      {Built and maintained Kafka-based microservices to process and route large-scale user event data to ad platforms such as Google, Meta, and Yahoo, ensuring high throughput and reliability.}
+    \resumeItem{Tag Managers}
+      {Designed and optimized JavaScript rules in Adobe Launch to capture real-time data layer events and publish them to destinations (Pinterest, Yahoo, Google), improving script accuracy and performance by \textbf{30\%}.}
+    \resumeItem{Gauge}
+      {Implemented an internal CAPI tool to capture and transmit user events to DACI (analytics platform), enhancing data quality and availability for downstream analytics.}
+  \resumeItemListEnd
+
+    \resumeSubheading
+      {TCS}{Kolkata}
+      {IT-Analyst}{AUG'20 - SEPT'-24}
+      \resumeItemListStart
+        \resumeItem{SAP-Hybris E-commerce Platform}
+          {Engineered robust, client-facing APIs for a dynamic rule engine within the SAP Hybris framework, leveraging MVEL to enable flexible, user-driven business logic configuration.}
+\newline
+          {Resolved critical production incidents and application bugs under strict Service Level Agreements (SLAs), ensuring high system availability and business continuity.}
+        \resumeItem{ASN Tracking Tool}
+        {Developed the core backend service for a B2B logistics application, architecting key functionalities for real-time shipment tracking and Advance Shipping Notice (ASN) management.}
+        \newline
+        {Collaborated with cross-functional teams to define API specifications and data models, ensuring seamless data interchange between carriers, suppliers, and the central platform.}
+        \newline
+      {Optimized SQL queries and caching strategies in PostgreSQL and MySQL, reducing API response times by up to \textbf{25\%}.}
+      \newline
+      {Implemented automated unit and integration tests using JUnit5 and SonarQube, improving code coverage and reducing post-release defects.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Daily Scriptures quotes}
+      {A subscription-based N8N-backed project which used the Claude AI model to generate quotes and send the same to subscribers. }
+    \resumeSubItem{dwiveditea.com}
+      {A freelance project for a small-scale Tea business, where consumers can order from the website.}
+  \resumeSubHeadingListEnd
+
+%
+
+
+%-----------Certification-----------------
+
+\section{Certification}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Udemy certified}
+    {Microservices professional using Spring Boot}
+      \resumeSubItem{NPTEL Learning}
+    {Data Strcutures \textbf{\&} Algorithms}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages:} Java, Kotlin, JavaScript, Python, SQL \\
+     \textbf{Frameworks:} Spring Boot 3.x \\
+     \textbf{Databases:} PostgreSQL, MongoDB, MySQL \\
+     \textbf{Message Brokers:} Apache Kafka \\
+     \textbf{Developer Tools:} Bitbucket, Maven, Gradle, SonarQube, JUnit5, LEC (internal deployment and secrets management tool)
+   }
+ \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MCKVIE - (MAKAUT Affiliated)}{Kolkata}
+      {B-Tech;  DGPA 8.00}{2016 -- 2020}
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
