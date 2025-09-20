@@ -21,8 +21,8 @@ To generate the PDF:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/resume.git
-cd resume
+git clone https://github.com/dubeyaditya29/overleaf-resume.git
+cd overleaf-resume
 
 # Build using pdflatex
 pdflatex resume.tex
